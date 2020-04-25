@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script type="text/javascript">
+        let data=[
+            {title:" این حزب با آغاز سرپرست گروه اشکان و خدمتکاران ویژه امیر و کیارش تشکیل شد "},
+        ];
+        window.onload=()=>{
+            document.getElementById("Button").addEventListener("click", function(){
+
+                let p =document.createElement("P");
+                let text =document.createTextNode(data[0].title);
+                p.appendChild(text);
+                p.style.backgroundColor="white";
+                p.style.textAlign="right";
+                p.style.border="5px outset yellow";
+                p.style.maxWidth="40%";
+                p.style.float="right";
+                p.style.display="block";
+
+                document.getElementById("result").appendChild(p);
+
+                let div = document.getElementById('Remove_Button');
+                div.parentNode.removeChild(div);
+
+            });
+
+        };
+    </script>
+</head>
+<body>
+<header class="title">
+
+    <div class="poem">
+        <p id="para_1">بنی‌آدم اعضای یکدیگرند</p>
+        <p id="para_2">که در آفرینش ز یک گوهرند</p>
+        <p id="para_3">چو عضوی به ‌درد آورَد روزگار</p>
+        <p id="para_4">دگر عضوها را نمانَد قرار</p>
+    </div>
+    <figure>
+        <img  src="Pic_1.jpg" alt="جبهه اتحاد ملی" />
+        <figcaption>جبهه اتحاد ملی</figcaption>
+    </figure>
+</header>
+<aside>
+<div class="col  menu">
+    <ul>
+        <li>خانه</li>
+        <li>تماس</li>
+        <li>خبر ها</li>
+        <li>درباره ما</li>
+    </ul>
+</div>
+</aside>
+<main>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://www.marxist.com/images/cache/9b3d5a20709f3cba8d1865846d5764db_w640_h427.png">
+                    <img style="max-width: 100%;
+                    max-height: 100%;" src="https://www.marxist.com/images/cache/9b3d5a20709f3cba8d1865846d5764db_w640_h427.png" alt="آنارشیسم مطلق" >
+                </a>
+                <div class="desc">آنارشیسم مطلق</div>
+            </div>
+        </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ottoman_flag_alternative_2.svg/640px-Ottoman_flag_alternative_2.svg.png">
+                <img style="max-width: 100%;
+                     max-height: 100%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Ottoman_flag_alternative_2.svg/640px-Ottoman_flag_alternative_2.svg.png" alt="پان ترک">
+            </a>
+            <div class="desc">پان ترک</div>
+        </div>
+    </div>
+
+    <div class="desc_1">
+        <div id=Remove_Button>
+            <button id="Button">مقدمه جبهه اتحاد ملی</button>
+        </div>
+        <div id="result"></div>
+
+    </div>
+
+
+</main>
+<footer>
+    <div class="center">
+        <p> &copy; Powered by Github/Kamyab Rouhifar</p>
+
+    </div>
+</footer>
+</body>
+</html>
